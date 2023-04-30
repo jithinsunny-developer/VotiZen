@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="500dp"
+        android:layout_marginLeft="500dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="500dp"
+        android:layout_marginRight="500dp"
+        android:layout_marginBottom="683dp"
+        android:text="Live Polls"
+        android:textColor="#673AB7"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <SearchView
+        android:id="@+id/searchViewInLivePoll"
+        android:layout_width="309dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="152dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="110dp"
+        android:gravity="center_horizontal"
+        android:iconifiedByDefault="false"
+        android:queryHint="Enter State Name"
+        app:layout_constraintBottom_toTopOf="@+id/FrameLayoutToViewPoll"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"/>
+
+    <FrameLayout
+        android:id="@+id/FrameLayoutToViewPoll"
+        android:layout_width="1264dp"
+        android:layout_height="450dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="7dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/party_name_in_list"
+        android:layout_width="234dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="65dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="31dp"
+        android:background="#673AB7"
+        android:gravity="center"
+        android:text="VOTES"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/FrameLayoutToViewPoll"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchViewInLivePoll" />
+
+    <TextView
+        android:id="@+id/ward_in_list"
+        android:layout_width="317dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="65dp"
+        android:layout_marginEnd="616dp"
+        android:layout_marginBottom="31dp"
+        android:background="#673AB7"
+        android:gravity="center"
+        android:text="WARD"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/FrameLayoutToViewPoll"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchViewInLivePoll" />
+
+
+    <TextView
+        android:id="@+id/candidate_name_in_list"
+        android:layout_width="311dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="65dp"
+        android:layout_marginEnd="288dp"
+        android:layout_marginBottom="31dp"
+        android:background="#673AB7"
+        android:gravity="center"
+        android:text="CANDIDATE NAME"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/FrameLayoutToViewPoll"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchViewInLivePoll" />
+
+    <TextView
+        android:id="@+id/state_in_list"
+        android:layout_width="306dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="65dp"
+        android:layout_marginEnd="956dp"
+        android:layout_marginBottom="31dp"
+        android:background="#673AB7"
+        android:gravity="center"
+        android:text="PARTY NAME"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/FrameLayoutToViewPoll"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchViewInLivePoll" />
+
+
+
+</android.support.constraint.ConstraintLayout>

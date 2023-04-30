@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="500dp"
+        android:layout_marginLeft="500dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="500dp"
+        android:layout_marginRight="500dp"
+        android:layout_marginBottom="683dp"
+        android:text="Edit Candidate"
+        android:textColor="#673AB7"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/choose_state_to_edit_candidate"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="610dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/searchView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="invisible"/>
+
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="164dp"
+        android:layout_marginEnd="476dp"
+        android:layout_marginBottom="100dp"
+        android:gravity="center_horizontal"
+        android:iconifiedByDefault="false"
+        android:queryHint="Enter Ward Number"
+        app:layout_constraintBottom_toTopOf="@+id/FrameLayoutToViewParticipants"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <!--<EditText
+        android:id="@+id/choose_ward_number_to_edit_candidate"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginBottom="610dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Ward Number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/searchView"
+        app:layout_constraintStart_toEndOf="@+id/choose_state_to_edit_candidate"
+        app:layout_constraintTop_toBottomOf="@+id/textView30" />-->
+
+    <FrameLayout
+        android:id="@+id/FrameLayoutToViewParticipants"
+        android:layout_width="1264dp"
+        android:layout_height="450dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="7dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </FrameLayout>
+
+
+    <TextView
+        android:id="@+id/party_name_in_list"
+        android:layout_width="234dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="31dp"
+        android:background="#673AB7"
+        android:gravity="center"
+        android:text="STATE"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/FrameLayoutToViewParticipants"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/ward_in_list"
+        android:layout_width="317dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="31dp"
+
+        android:background="#673AB7"
+        android:gravity="center"
+        android:text="WARD"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/FrameLayoutToViewParticipants"
+        app:layout_constraintEnd_toStartOf="@+id/candidate_name_in_list"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/candidate_name_in_list"
+        android:layout_width="311dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="31dp"
+        android:background="#673AB7"
+        android:gravity="center"
+        android:text="CANDIDATE NAME"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/FrameLayoutToViewParticipants"
+        app:layout_constraintEnd_toStartOf="@+id/party_name_in_list"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/state_in_list"
+        android:layout_width="306dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginBottom="31dp"
+        android:background="#673AB7"
+
+        android:gravity="center"
+        android:text="PARTY NAME"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/FrameLayoutToViewParticipants"
+        app:layout_constraintEnd_toStartOf="@+id/ward_in_list"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "710385132623",
+    "firebase_url": "https://votizenapp.firebaseio.com",
+    "project_id": "votizenapp",
+    "storage_bucket": "votizenapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:710385132623:android:366f414fdeeb804d",
+        "android_client_info": {
+          "package_name": "com.example.votizen"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "710385132623-vqv2vkdnl9ovrcrqhe9oc27j6u3g7jpt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCpe4OqWJtoHihW9ReHfwE8QSVRELF_5h8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "710385132623-vqv2vkdnl9ovrcrqhe9oc27j6u3g7jpt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

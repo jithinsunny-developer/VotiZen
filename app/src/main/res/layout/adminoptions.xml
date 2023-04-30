@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="673dp"
+        android:layout_height="438dp"
+        android:layout_marginStart="500dp"
+        android:layout_marginEnd="500dp"
+        android:layout_marginBottom="344dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.521"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/votizen" />
+
+    <Button
+        android:id="@+id/choose_live_polls"
+        android:layout_width="400dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="500dp"
+        android:layout_marginLeft="500dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="500dp"
+        android:layout_marginRight="500dp"
+        android:layout_marginBottom="102dp"
+        android:background="#673AB7"
+        android:text="Live Polls"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:onClick="AdminOptions"
+        app:layout_constraintBottom_toTopOf="@+id/choose_candidates"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView15" />
+
+    <Button
+        android:id="@+id/choose_candidates"
+        android:layout_width="400dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="500dp"
+        android:layout_marginLeft="500dp"
+        android:layout_marginEnd="500dp"
+        android:layout_marginRight="500dp"
+        android:layout_marginBottom="205dp"
+        android:background="#673AB7"
+        android:text="Candidate Details"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:onClick="AdminOptions"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/choose_live_polls" />
+</android.support.constraint.ConstraintLayout>

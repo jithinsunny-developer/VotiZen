@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".alert_dialog_activity">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="673dp"
+        android:layout_height="438dp"
+        android:layout_marginStart="500dp"
+        android:layout_marginEnd="500dp"
+        android:layout_marginBottom="400dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/votizen" />
+
+    <TextView
+        android:id="@+id/alert_text"
+        android:layout_width="601dp"
+        android:layout_height="180dp"
+        android:layout_marginStart="340dp"
+        android:layout_marginTop="360dp"
+        android:layout_marginEnd="339dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/No"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="732dp"
+        android:layout_marginLeft="732dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginBottom="369dp"
+        android:onClick="YesOrNo"
+        android:text="NO"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/alert_text"
+        android:textColor="@color/white"
+        android:background="#673AB7"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/Yes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="348dp"
+        android:layout_marginRight="348dp"
+        android:layout_marginBottom="369dp"
+        android:onClick="YesOrNo"
+        android:text="YES"
+        android:textColor="@color/white"
+        android:background="#673AB7"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/alert_text"
+        app:layout_constraintVertical_bias="0.0" />
+</android.support.constraint.ConstraintLayout>

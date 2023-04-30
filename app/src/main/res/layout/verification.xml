@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="500dp"
+        android:layout_marginLeft="500dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="500dp"
+        android:layout_marginRight="500dp"
+        android:layout_marginBottom="681dp"
+        android:text="Verification "
+        android:textColor="#673AB7"
+        android:textSize="80sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/choose_pin"
+        android:layout_width="400dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="500dp"
+        android:layout_marginLeft="500dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="500dp"
+        android:layout_marginRight="500dp"
+        android:layout_marginBottom="91dp"
+        android:background="#673AB7"
+        android:text="PIN Number"
+        android:textColor="#FFFFFF"
+        android:textSize="40sp"
+        android:onClick="ChooseVerificationType"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/choose_otp" />
+
+    <Button
+        android:id="@+id/choose_otp"
+        android:layout_width="400dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="500dp"
+        android:layout_marginLeft="500dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="500dp"
+        android:layout_marginRight="500dp"
+        android:background="#673AB7"
+        android:text="OTP"
+        android:textColor="#FFFFFF"
+        android:textSize="40sp"
+        android:onClick="ChooseVerificationType"
+        app:layout_constraintBottom_toTopOf="@+id/choose_pin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/choose_fingerprint" />
+
+    <Button
+        android:id="@+id/choose_fingerprint"
+        android:layout_width="400dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="500dp"
+        android:layout_marginLeft="500dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="500dp"
+        android:layout_marginRight="500dp"
+        android:background="#673AB7"
+        android:text="Fingerprint"
+        android:textColor="#FFFFFF"
+        android:textSize="40sp"
+        android:onClick="ChooseVerificationType"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="500dp"
+        android:layout_marginLeft="500dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="500dp"
+        android:layout_marginRight="500dp"
+        android:layout_marginBottom="79dp"
+        android:text="Kindly choose an option to verify your identity."
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/choose_fingerprint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+</android.support.constraint.ConstraintLayout>
